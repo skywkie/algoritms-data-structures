@@ -213,4 +213,3 @@ const node4 = new LinkedListNode(4);
 linkedList.append(node0).append(node1).append(node2).append(node3).append(node4);
 
 console.log(linkedList);
-console.log(linkedList.reverse());
