@@ -1,8 +1,9 @@
-export class LinkedListNode {
-  constructor(value, next = null) {
+export class DoublyLinkedListNode {
+  constructor(value, next = null, previous = null) {
     this.value = value;
 
     this.next = next;
+    this.previous = previous;
   }
 
   toString(callback) {
