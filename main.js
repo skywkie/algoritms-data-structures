@@ -3,4 +3,5 @@
 // import Queue from "./data_structures/queue/queue.js";
 
 // import { numbers } from "./algoritms/sorts/bubble-sort.js";
+import { numbers } from "./algoritms/sorts/selection-sort.js";
 // import { numbers } from "./algoritms/searches/binary-search.js";
