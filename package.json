@@ -5,13 +5,21 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon main.js"
+    "start": "nodemon main.js",
+    "test": "jest",
+    "test:linked-list": "jest ./data_structures/linkedList/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.16.0",
-  "dependencies": {
-    "nodemon": "^3.1.10"
+  "packageManager": "pnpm@10.19.0",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.10",
+    "@babel/core": "^7.28.4",
+    "@babel/preset-env": "^7.28.3",
+    "@jest/globals": "^30.2.0",
+    "babel-jest": "^30.2.0"
   }
 }

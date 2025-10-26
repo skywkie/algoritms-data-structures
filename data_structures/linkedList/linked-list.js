@@ -35,7 +35,7 @@ export default class LinkedList {
   }
 
   insert(value, index) {
-    if (!index) return this.prepend(value);
+    if (index <= 0) return this.prepend(value);
 
     let currentNode = this.head;
     let i = 0;
@@ -62,7 +62,7 @@ export default class LinkedList {
     const removed = this.head;
 
     if (this.head.next) {
-      this.head.next = removed;
+      this.head = this.head.next;
     } else {
       this.head = null;
       this.tail = null;
@@ -180,6 +180,10 @@ export default class LinkedList {
     return array;
   }
 
+  toString() {
+    return this.toArray().join(", ");
+  }
+
   reverse() {
     let currentNode = this.head;
     let prevNode = null;
@@ -212,4 +216,4 @@ const node4 = new LinkedListNode(4);
 
 linkedList.append(node0).append(node1).append(node2).append(node3).append(node4);
 
-console.log(linkedList);
+// console.log(linkedList);
